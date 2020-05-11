@@ -18,7 +18,7 @@ echo -e "###################"
 echo -e "#  Installing i3  #"
 echo -e "###################"
 
-apt-get install -y git build-essential autoconf pkg-config
+apt-get install -y git build-essential autoconf pkg-config i3blocks
 apt-get install i3 -y
 
 # i3-gaps Installation
