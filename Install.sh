@@ -109,7 +109,10 @@ cd dotfiles/
 cp .bashrc .profile /root/
 cd .config/ && cp -r compton/ i3/ neofetch/ rofi/ xfce4/ /root/.config/
 cd ../.local/share && cp -r xfce4 /root/.local/share/
-
+wget https://raw.githubusercontent.com/trickster0/Kali-i3gaps-Install/master/config -O ~/.config/i3/config
+wget https://raw.githubusercontent.com/trickster0/Kali-i3gaps-Install/master/i3blocks.conf -O ~/.config/i3/i3blocks.conf
+echo i3 > ~/.xsession
+echo user-session=i3 >> /etc/lightdm/lightdm.conf
 ## Finish
 sleep .5;
 echo -e "\n"
